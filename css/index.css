@@ -325,6 +325,9 @@ header nav a {
 @media (max-width: 500px) {
   .content-pick {
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .content-pick .destination {
@@ -334,10 +337,11 @@ header nav a {
 @media (max-width: 500px) {
   .content-pick .destination {
     width: 100%;
-    margin: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
-.content-pick .destination .btn {
+.content-pick .btn {
   width: 80%;
   height: 36px;
   background-color: #17A2B8;
@@ -349,7 +353,12 @@ header nav a {
   align-items: center;
   cursor: pointer;
 }
-.content-pick .destination .btn:hover {
+@media (max-width: 500px) {
+  .content-pick .btn {
+    width: 100%;
+  }
+}
+.content-pick .btn:hover {
   background-color: #ebfafd;
   color: #17A2B8;
   border: 1px solid #17A2B8;
